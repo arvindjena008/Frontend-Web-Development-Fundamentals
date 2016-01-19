@@ -1,0 +1,31 @@
+<HTML>
+	<HEAD><TITLE>FORM EXAMPLE</TITLE></HEAD>
+	<BODY><form method = "get" action = "submitme.php">
+  <fieldset >
+    <legend>YOUR DETAILS:</legend>
+    Name: <input type="text"><br>
+    Email: <input type="text"><br>
+  </fieldset>
+  <fieldset>
+  	<legend>YOUR REVIEW</legend>
+  	How do you hear about us ?
+  	<select>
+  		<option value="GOGGLE">GOGGLE</option>
+  		<option value="FB">FACE BOOK</option>
+  		<option value="LINKEDIN">LINKEDIN</option>
+  		<option value="TWIT">TWITTER</option>
+  		<option value="whatsapp">WHATSAPP</option>
+	</select>
+	<br/>
+	Would you visit again ?
+	</br>
+	<input type="radio" name="reply" value="reply"> YES
+ 	 <input type="radio" name="reply" value="reply"> NO
+  	 <input type="radio" name="reply" value="reply"> MAY BE<BR/>
+  	 Comments:<br/>
+  	 <textarea name="comments" rows="5" cols="50"></textarea><br/>
+  	 <input name="signin" value = "update" type="checkbox" /> Sign me up for email updates<br/>
+  	 <input type = "submit" value = "Submit Review"/>
+  </fieldset>
+</form></BODY>
+</HTML>
