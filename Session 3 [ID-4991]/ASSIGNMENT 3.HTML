@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD><TITLE>HTML FORM WITH CSS</TITLE>
+		<STYLE TYPE="text/css">
+			BODY{
+				background-color: SKYBLUE;
+			}
+			.button {
+    background-color: RED; 
+    border: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    }
+			.button:hover {
+
+    background-color: GREEN;
+    color: BLACK;
+	}
+	TH,DIV{
+		font-family: fantasy;
+		font-size: 25px;
+		color: BROWN;
+	}
+	LABEL{
+		font-family: monospace;
+		color: BLUE;
+	}
+	fieldset{
+  		background-color: GRAY;
+  		border:2px solid green;
+  		border-radius:50px;
+  		width: 20px;
+	}
+	</STYLE>
+	</HEAD>
+	<BODY>
+		<form action="demo_form.asp">
+			<LABEL><H2>STEP 1:YOUR DETAILS</H2></LABEL>
+		<FIELDSET>
+		<LEGEND></LEGEND>
+		<TABLE cellpadding="5" cellspacing="10">
+		<TR><TH>NAME </TH><DIV><TD><INPUT TYPE="TEXT" PLACEHOLDER="FIRST & LAST NAME" SIZE="43" REQUIRED></TD></DIV></TR>
+
+		<TR><TH>EMAIL </TH><TD><INPUT TYPE="EMAIL" PLACEHOLDER="EXAMPLE@DOMAIN.COM" SIZE="43" REQUIRED></TD></TR>
+		<TR><TH>PHONE </TH><TD><INPUT TYPE="NUMBER" PLACEHOLDER="8000001000" REQUIRED></TD></TR>
+		</TABLE>
+		</FIELDSET><BR>
+		<LABEL><H2>STEP 2:DELIVERY ADDRESS</H2></LABEL>
+		<FIELDSET>
+		<LEGEND></LEGEND>
+		<TABLE cellpadding="10" cellspacing="10">
+		<TR><TH>ADDRESS:</TH><TD></LABEL><TEXTAREA NAME="ADDRESS" ROWS="5" COLS="38" REQUIRED></TEXTAREA></TD></TR>
+		<TR><TH>PINCODE:</TH><TD><INPUT TYPE="NUMBER" PLACEHOLDER="565555" REQUIRED></TD></TR>
+		<TR><TH>COUNTRY:</TH><TD><INPUT TYPE="TEXT" REQUIRED></TD></TR>
+		</TABLE>
+		</FIELDSET><BR>
+		<LABEL><H2>STEP 3:YOUR DETAILS</H2></LABEL>
+		<FIELDSET>
+		<LEGEND></LEGEND>
+		<TABLE cellpadding="10" cellspacing="10">
+				<TR><DIV><SPAN STYLE="margin-left: 15px;">CARD TYPE</SPAN><TD COLSPAN="2"><input type="radio" name="CARD" value="VISA"> <INPUT TYPE="IMAGE" SRC="IMAGE2.png" ALT="SUBMIT" WIDTH="40" HEIGHT="15" >VISA
+  				<input type="radio" name="CARD" value="AMEX"> <INPUT TYPE="IMAGE" SRC="IMAGE3.jpg" ALT="SUBMIT" WIDTH="40" HEIGHT="15" >AMEX
+  				<input type="radio" name="CARD" value="MASTERCARD"> <INPUT TYPE="IMAGE" SRC="image1.png" ALT="SUBMIT" WIDTH="40" HEIGHT="15" >MASTERCARD
+  				</TD></DIV></TR>
+				<TR><TH>CARD NUMBER </TH><TD><SPAN STYLE="margin-left: 15px;" SIZE="50"REQUIRED></SPAN><INPUT TYPE="NUMBER"></TD></TR>
+		<TR><TH>SECURITY NUMBER </TH><TD><SPAN STYLE="margin-left: 15px;" REQUIRED></SPAN><INPUT TYPE="NUMBER" ></TD></TR>
+		<TR><TH>NAME ON CARD </TH><TD><SPAN STYLE="margin-left: 15px;" REQUIRED></SPAN><INPUT TYPE="TEXT" SIZE="35"></TD></TR>
+		</TABLE>
+		</FIELDSET><BR>
+		<DIV STYLE="margin-left: 165px;"><button CLASS="button">BUY IT!</button></DIV>
+		</form>	
+	</BODY>
