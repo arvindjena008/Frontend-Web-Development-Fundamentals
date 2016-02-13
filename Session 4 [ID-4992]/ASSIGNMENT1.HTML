@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD><TITLE>SPEECH BUBBLE SHAPE</TITLE>
+		<STYLE TYPE="text/css">
+  .BUBBLE {
+    position: relative;
+    width: 198px;
+    height: 59px;
+    padding: 13px;
+    background: SKYBLUE;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 50%;
+    font-family: fantasy;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+  .BUBBLE:after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -100px;
+    border-style: solid;
+    border-width: 18px 100px 18px 0;
+    border-color: transparent SKYBLUE;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+.BUBBLE1 {
+    position: relative;
+    width: 115px;
+    height: 51px;
+    padding: 9px;
+    background: GREEN;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    margin-left: 50%;
+    font-family: fantasy;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    
+}
+
+  .BUBBLE1:after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 70px;
+    border-style: solid;
+    border-width: 42px 15px 0;
+    border-color: GREEN transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+	}
+</STYLE>
+
+	</HEAD>
+	<BODY>
+		<DIV CLASS="BUBBLE">BUBBLE SHAPE</DIV><BR><BR><BR><BR>
+		<DIV CLASS="BUBBLE1">BUBBLE SHAPE 1</DIV><BR>
+		
+	</BODY>
+</HTML>

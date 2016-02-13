@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head><title>BOX TO CIRCLE</title>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    font-family: fantasy;
+    font-size: 50px;
+    color: white;
+    background: green;
+    text-align: center;
+    padding: 50px;
+    margin: 50px auto;
+    transition:border-radius 5s; 
+     
+}
+@-webkit-keyframes example {
+    from {background-color: green;}
+    to {background-color: orange;}
+}
+@keyframes example {
+    from {background-color: green;}
+    to {background-color: orange;}
+}
+div:hover {
+     
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    animation-name: example;
+    animation-duration: 5s;
+    font-family: fantasy;
+    font-size: 50px;
+    color: black;
+    border-radius: 50%;
+}
+@-webkit-keyframes example1 {
+    from {color: green;}
+    to {color: orange;}
+}
+@keyframes example1 {
+    from {color: green;}
+    to {color: orange;}
+}
+p{
+	 -webkit-animation-name: example1; 
+    -webkit-animation-duration: 5s;
+    animation-name: example1;
+    animation-duration: 5s;
+	font-size: 30px;
+	font-family: fantasy;
+	color: GREEN;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<div>BOX</div>
+
+<p>BACKGROUND COLOR OF DIV ELEMENT CHANGE FROM GREEN TO ORANGE</p>
+
+</body>
+</html>

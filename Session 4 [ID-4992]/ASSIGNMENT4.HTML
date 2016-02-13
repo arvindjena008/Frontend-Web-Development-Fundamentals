@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD><TITLE>DIFFERENT TYPES OF GRADIENTS</TITLE>
+		<STYLE TYPE="text/css">
+			#grad1 {
+    			height: 100px;
+  			    width: 100px;
+ 			    background: red;  
+    			background: -webkit-linear-gradient(left, red , yellow,green); 
+ 			    background: -o-linear-gradient(right, red, yellow,green); 		
+                background: -moz-linear-gradient(right, red, yellow,green);
+   			    background: linear-gradient(to right, red , yellow,green);
+   			    -webkit-box-shadow: 24px 24px 20px 6px black;
+				-moz-box-shadow: 24px 24px 20px 6px black;
+				box-shadow: 10px 14px 20px 6px black;
+			}
+			#grad2 {
+    			height: 100px;
+    			width: 100px;
+    			position: absolute;
+    			top: 18px;
+    			margin-left: 200px;
+    			background: -webkit-radial-gradient(circle, red, yellow, green); 
+    			background: -o-radial-gradient(circle, red, yellow, green); 
+    			background: -moz-radial-gradient(circle, red, yellow, green); 
+    			background: radial-gradient(75% -40%,circle closest-corner,red, yellow 250%, green 29%); 
+    			-webkit-box-shadow: 24px 24px 20px 6px black;
+				-moz-box-shadow: 24px 24px 20px 6px black;
+				box-shadow: 10px 14px 20px 6px black;
+			}
+			#grad3 {
+    			height: 100px;
+    			width: 100px;
+    			position: absolute;
+    			top: 18px;
+    			margin-left: 400px;
+    			background: -webkit-radial-gradient(60% 100%,red, yellow, green); 
+    			background: -o-radial-gradient(60% 100%,red, yellow, green); 
+    			background: -moz-radial-gradient(60% 100%,red, yellow, green); 
+    			background: radial-gradient(farthest-side at 50% -1%,red, yellow, green); 
+    			-webkit-box-shadow: 24px 24px 20px 6px black;
+				-moz-box-shadow: 24px 24px 20px 6px black;
+				box-shadow: 10px 14px 20px 6px black;
+			}
+		</STYLE>
+	</HEAD>
+	<BODY>
+		<div id="grad1"><p style="position: relative;top: 40px;left: 33px;">BOX</p></div>
+		<div id="grad2"><p style="position: relative;top: 25px;left: 33px;">BOX</p></div>
+		<div id="grad3"><p style="position: relative;top: 25px;left: 33px;">BOX</p></div>
+	</BODY>
+</HTML>	
