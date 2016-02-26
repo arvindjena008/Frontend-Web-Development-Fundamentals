@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>mouse coordinates</title>
+    <style type="text/css">
+    	.mouse-cordinate-body{
+    		padding: 15px;
+    	}
+    	.mouse-cordinate-body h2{
+    		margin-bottom: 15px;
+    	}
+    	.mouse-coorinate-list{
+    		border:1px solid #ccc; 
+    		margin-bottom: 5px; 
+    		text-align: left; 
+    		width:650px; 
+    		display: table; 
+    		table-layout: auto
+    	}
+    	.mouse-coorinate-list:nth-child(even){
+    		background: #f1f1f1;
+    	}
+    	.mouse-coorinate-list li{
+    		border-right: 1px solid #ccc; 
+    		padding: 10px;
+    		display: table-cell;
+    	}
+    	.mouse-coorinate-list li:last-child{
+    		border-right: 0;
+    	}
+    </style>
+</head>
+<body class="mouse-cordinate-body">
+   <h2>Mouse Coordinates and Time</h2>
+    <script type="text/javascript">
+   		var m = (navigator.appName == "Microsoft Internet Explorer") ? true : false;
+		if(!m){
+    		document.captureEvents(Event.MOUSEMOVE);
+		}
+		document.onmousemove = mousePos;
+		var mouseX = 0;
+		var mouseY = 0;
+		function mousePos(e){
+ 		   if(!m){
+		      mouseX = e.pageX;
+		      mouseY = e.pageY;
+ 		   }
+ 		   else{
+     		 mouseX = e.clientX + document.body.scrollLeft;
+     		 mouseY = e.clientY + document.body.scrollRight;
+   		 }
+    		document.body.innerHTML += "<ul class='mouse-coorinate-list'><li><strong>X: </strong>" + mouseX + ";</li><li><strong>Y: </strong>" + mouseY + "; </li><li><strong>Time: </strong>" + new Date() + "</li></ul>";	
+    		return true;
+		}
+    </script>
+</body>
+</html>

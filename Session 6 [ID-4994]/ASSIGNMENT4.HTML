@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>check brackets</title>
+    <style type="text/css">
+    .textContent{
+      font:normal 14px arial;
+      text-transform: capitalize; 
+      margin: 15px;
+    }
+    .valid:after{
+      content:" : Correct";
+      font:bold 14px arial; 
+      color:green;
+    }
+    .invalid:after{
+      content:" : Incorrect"; 
+      font:bold 14px arial; 
+      color:red;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+      <li class="textContent">checkBrackets('( ( a + b ) / 5 abd )'); </li>
+      <li class="textContent">checkBrackets(') ( a + b ) )');</li>
+      <li class="textContent">checkBrackets('( b * ( c + d *2 / ( 2 + ( 12 abc / ( a + 3 ) ) ) )');</li>  
+    </ul>
+    <script type="text/javascript">
+    function checkBrackets(str) {
+  var opens = str.match(/\(/g) || [],
+    closes = str.match(/\)/g) || [];
+  return opens.length === closes.length;
+}
+
+Array.prototype.forEach.call(document.getElementsByTagName('li'), function(li) {
+  li.classList.add(checkBrackets(li.textContent) ? 'valid' : 'invalid');
+});
+    </script>
+</body>
+</html>

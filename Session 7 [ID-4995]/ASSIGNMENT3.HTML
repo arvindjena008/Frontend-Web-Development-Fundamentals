@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text field</title>
+        <style type="text/css">
+                input[readonly] {
+                   background-color: red;
+                }
+        </style>
+    </head>
+    <body>
+        <form name="formex">
+            <input type="text" name="numberinput">
+        </form>
+        <script type="text/javascript">
+            window.onload = function(){
+                document.formex.numberinput.onchange = checkIfNumber;
+                function checkIfNumber(){
+                     if (isNaN(parseInt(document.formex.numberinput.value, 10))){
+                        document.formex.numberinput.innerHTML = document.formex.numberinput.value;
+                        document.formex.numberinput.readOnly = true;
+                        setTimeout(function(){            
+                           document.formex.numberinput.readOnly = false;
+                        }, 10000);
+                      }
+                 }
+            }
+        </script>
+    </body>
+</html>

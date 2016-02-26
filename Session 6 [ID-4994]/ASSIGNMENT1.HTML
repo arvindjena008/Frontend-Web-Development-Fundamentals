@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD><TITLE>MIN AND MAX</TITLE>
+		<STYLE TYPE="text/css">
+			INPUT.button {
+    background-color: RED; 
+    border: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    }
+			INPUT.button:hover {
+    background-color: GREEN;
+    color: BLACK;
+    -webkit-box-shadow: 24px 24px 20px 6px black;
+				-moz-box-shadow: 24px 24px 20px 6px black;
+				box-shadow: 10px 14px 20px 6px black;
+	}
+		</STYLE>
+		</HEAD>
+	<BODY>
+		<CENTER><H3 style="font-size:50px; color:green; margin-top: 1px; font-family:fantasy;">ENTER THE NUMBER IN EACH BOX BELOW:</H3><BR>
+		<INPUT TYPE="TEXT" ID="N1"/ style="font-size:50px; text-align:center; color:blue; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="TEXT" ID="N2"/style="font-size:50px; text-align:center; color:blue; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="TEXT" ID="N3"/style="font-size:50px; text-align:center; color:blue; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="TEXT" ID="N4"/style="font-size:50px; text-align:center; color:blue; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="TEXT" ID="N5"/style="font-size:50px; text-align:center; color:blue; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="BUTTON" ID="MINMAX" CLASS="button" VALUE="CALCULATE MINMAX"
+		ONCLICK="minmaxofnum(N1.value,N2.value,N3.value,N4.value,N5.value)"/>
+		<SCRIPT TYPE="text/javascript">
+			function minmaxofnum(N1,N2,N3,N4,N5){
+				var a = Math.max(N1,N2,N3,N4,N5);
+				var b = Math.min(N1,N2,N3,N4,N5);
+				document.write("<center>The maximum number is: "+a+"</CENTER>");
+				document.write("<center>The minimum number is: "+b+"</CENTER>");
+			}
+		</SCRIPT>
+		</CENTER>
+	</BODY>
+</HTML>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD><TITLE>FIZZ BUZZ PROGRAM</TITLE>
+		<STYLE TYPE="text/css">
+			INPUT.button {
+    background-color: RED; 
+    border: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    }
+			INPUT.button:hover {
+    background-color: GREEN;
+    color: BLACK;
+    -webkit-box-shadow: 24px 24px 20px 6px black;
+				-moz-box-shadow: 24px 24px 20px 6px black;
+				box-shadow: 10px 14px 20px 6px black;
+	}
+		</STYLE>
+	</HEAD>
+	<BODY>
+		<CENTER><H3 style="font-size:50px; color:blue; margin-top: 1px; font-family:fantasy;">ENTER THE NUMBER:</H3>
+		<INPUT TYPE="TEXT" ID="N1"/ style="font-size:50px; text-align:center; color:pink; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="TEXT" ID="N2"/style="font-size:50px; text-align:center; color:pink; font-family:fantasy;"><BR/><BR/>
+		<INPUT TYPE="BUTTON" ID="FIZZBUZZ" CLASS="button" VALUE="CALCULATE THE MUL(3,5)"
+		ONCLICK="mulfizzbuzz(N1.value,N2.value)"/>
+		<SCRIPT TYPE="text/javascript">
+			function mulfizzbuzz(N1,N2){
+				var a=N1;
+				var b=N2;
+				var number;
+				for (number =N1; number <= N2; number++) {
+				    if (number % 3 ==0 & number % 5 ==0) {
+        				document.write(number+": fizzbuzz<BR>");
+  				  } else if (number % 3 == 0) {
+  				     	document.write(number+": fizz<BR>");
+  				  } else if (number % 5 == 0) {
+   				     	document.write(number+": buzz<BR>")
+  				  } else {
+  				      	document.write(number+"<BR>");
+  				  }
+
+				}
+			}
+		</SCRIPT>
+		
+	</BODY>	
